@@ -46,20 +46,41 @@ a, a:visited, a:hover, a:active {
   text-decoration: none;
 }
 
-div.hero {
-  display: flex;
-  flex-direction: column;
+div.banner {
+  text-align: center;
+  font-size: 5em;
+  color: white;
+  line-height: 600px;
+
+  width: 1000px;
+  height: 600px;
+  background-size: 1000px 600px;
 }
 
-div.hero img.banner {
-  width: fit-content;
-  height: fit-content;
-  align-self: center;
+span.banner-text {
+  background: black;
+  padding: 10px;
 }
 
-img {
-  max-width: 1000px;
-  object-fit: cover;
+
+div.hero-banner {
+  background-image: url('https://images.unsplash.com/photo-1545690546-8bb3627a906c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80" alt="picture of washington dc');
+}
+
+div.politics-banner {
+  background-image: url('https://images.unsplash.com/photo-1529107386315-e1a2ed48a620?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80');
+}
+
+div.science-banner {
+  background-image: url('https://images.unsplash.com/photo-1518152006812-edab29b069ac?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80');
+}
+
+div.economics-banner {
+  background-image: url('https://images.unsplash.com/photo-1559589689-577aabd1db4f?ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80');
+}
+
+div.trump-banner {
+  background-image: url('https://d.newsweek.com/en/full/629926/trump-cnn.jpg');
 }
 
 header {
