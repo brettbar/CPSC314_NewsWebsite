@@ -1,9 +1,9 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+
 body.main-body {
   padding: 0;
   margin: 0;
   font-family: 'Roboto', sans-serif;
-
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -17,8 +17,8 @@ nav.title {
   justify-content: space-around;
   align-items: center;
   flex-wrap: wrap;
-  background: rgb(255,24,24);
-  background: linear-gradient(129deg, rgba(255,24,24,1) 20%, rgba(96,59,235,1) 80%);
+  background: rgb(255, 24, 24);
+  background: linear-gradient(129deg, rgba(255, 24, 24, 1) 20%, rgba(96, 59, 235, 1) 80%);
   height: fit-content;
   min-height: 200px;
   text-decoration: none;
@@ -47,46 +47,85 @@ a, a:visited, a:hover, a:active {
   text-decoration: none;
 }
 
-
 div.banner {
   text-align: center;
-  font-size: 5em;
+  font-size: 3.5em;
   color: white;
-  line-height: 600px;
-  width: ;
-  height: 600px;
-  background-size: 1000px 600px;
+  line-height: 700%;
 }
+div.article-countainer{
+  background: linear-gradient(129deg, rgba(255, 24, 24, 1) 20%, rgba(96, 59, 235, 1) 80%);
+  margin:3px;
+  margin-top:0px;
+}
+
+a.article-title {
+  display: block;
+  font-size: 1em;
+  background-color: rgba(255, 255, 255,0.1);
+  min-width: 100px;
+  text-align: center;
+  margin: 0px;
+}
+p.article-text {
+  font-size: 0.75em;
+  color:black;
+  background-color: rgba(255, 255, 255,0.9);
+  padding:10px;
+  margin-top:0px;
+}
+
+
+
 
 span.banner-text {
   background: black;
   padding: 10px;
 }
 
-section.hero{
+section.hero {
   grid-area: home;
+  min-width: 100px;
 }
-section.politics{
+
+section.politics {
   grid-area: politic;
+  min-width: 100px;
 }
-section.science{
+section.articles-politic{
+  grid-area: pol-articles;
+  min-width: 100px;
+}
+
+section.science {
   grid-area: science;
+  max-width: 100%;
 }
-section.economics{
+section.articles-science{
+  grid-area: sci-articles;
+  min-width: 100px;
+}
+
+section.economics {
   grid-area: eco;
+  min-width: 100px;
+}
+section.articles-economics{
+  grid-area: eco-articles;
+  min-width: 100px;
 }
 
-.news{
+.news {
   display: grid;
-  width: 75%;
-  grid-template-columns: 2fr 2fr;
+  width: 90%;
+  z-index: 1;
+  grid-gap: 10px;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-template-areas:
-  "home  politic"
-  "science eco";
+    "home home politic pol-articles"
+    "sci-articles science eco-articles eco";
 }
 
-
-}
 div.hero-banner {
   background-image: url('https://images.unsplash.com/photo-1545690546-8bb3627a906c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80 alt=picture of washington dc');
 }
@@ -102,20 +141,28 @@ div.science-banner {
 div.economics-banner {
   background-image: url('https://images.unsplash.com/photo-1559589689-577aabd1db4f?ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80');
 }
+
 /*
 div.trump-banner {
   background-image: url('https://d.newsweek.com/en/full/629926/trump-cnn.jpg');
 }*/
-
 header {
   width: 100%;
   text-align: center;
   font-size: 2em;
 }
 
-
 footer {
-  align-self: center;
-  color: grey;
-  padding: 25px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  background: rgb(255, 24, 24);
+  background: linear-gradient(129deg, rgba(255, 24, 24, 1) 20%, rgba(96, 59, 235, 1) 80%);
+  height: fit-content;
+  min-height: 50px;
+  text-decoration: none;
+  width: 100%;
+  margin-top: 50px;
 }
