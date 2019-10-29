@@ -9,6 +9,7 @@ body.main-body {
   align-items: center;
   background: black;
   color: white;
+
 }
 
 nav.title {
@@ -57,9 +58,25 @@ div.banner {
 }
 
 div.article-countainer{
-  background: linear-gradient(129deg, rgba(255, 24, 24, 1) 20%, rgba(96, 59, 235, 1) 80%);
   margin:3px;
   margin-top:0px;
+}
+
+div.sci{
+  background: #34e89e;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #0f3443, #34e89e);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #0f3443, #34e89e); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+div.pol{
+  background: #f79d00;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #64f38c, #f79d00);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #64f38c, #f79d00); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+div.eco{
+  background: #0B486B;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #F56217, #0B486B);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #F56217, #0B486B); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
 a.article-title {
@@ -82,9 +99,31 @@ p.article-text {
 
 
 span.banner-text {
-  background: black;
+  background: rgb(255, 24, 24);
+  background: linear-gradient(129deg, rgba(255, 24, 24, 1) 20%, rgba(96, 59, 235, 1) 80%);
   padding: 10px;
 }
+
+span.pol {
+  background: #f79d00;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #64f38c, #f79d00);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #64f38c, #f79d00); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  padding: 10px;
+}
+span.sci {
+  background: #34e89e;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #0f3443, #34e89e);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #0f3443, #34e89e); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */\
+  padding: 10px;
+}
+span.eco {
+  background: #0B486B;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #F56217, #0B486B);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #F56217, #0B486B); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+  padding: 10px;
+}
+
 
 section.hero {
   grid-area: home;
@@ -161,6 +200,7 @@ footer {
   justify-content: space-around;
   align-items: center;
   flex-wrap: wrap;
+  position: relative;
   background: rgb(255, 24, 24);
   background: linear-gradient(129deg, rgba(255, 24, 24, 1) 20%, rgba(96, 59, 235, 1) 80%);
   height: fit-content;
@@ -168,4 +208,7 @@ footer {
   text-decoration: none;
   width: 100%;
   margin-top: 50px;
+  margin-bottom: 0px;
+  bottom: 0;
+  z-index: 1;
 }
