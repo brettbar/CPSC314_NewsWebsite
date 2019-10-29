@@ -202,14 +202,27 @@ div.par-1{
 div.par-2{
   grid-area: par2;
 }
+div.picture1{
+  grid-area: pic1;
+  background-image: url('https://images.unsplash.com/photo-1545690546-8bb3627a906c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80 alt=picture of washington dc');
+}
 div.par-3{
   grid-area: par3;
+}
+div.picture2{
+  grid-area: pic2;
+  background-image: url('https://images.unsplash.com/photo-1545690546-8bb3627a906c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80 alt=picture of washington dc');
+  height: 100%;
 }
 div.par-4{
   grid-area: par4;
 }
 div.par-5{
   grid-area: par5;
+}
+div.picture3{
+  grid-area: pic3;
+  background-image: url('https://images.unsplash.com/photo-1545690546-8bb3627a906c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80 alt=picture of washington dc');
 }
 div.par-6{
   grid-area: par6;
@@ -222,12 +235,12 @@ section.article-news{
   grid-gap: 10px;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
   grid-template-areas:
-  ".title title title ."
+  ". title title title ."
   "par1 par1 par1 par1 par1"
-  "par2 par2 par2 par2 ."
-  ". . . par3 par3"
+  "par2 par2 par2 pic1 pic1"
+  "pic2 pic2 pic2 par3 par3"
   "par4 par4 par4 par4 par4"
-  "par5 par5 par5 par5 ."
+  "par5 par5 par5 par5 pic3"
   "par6 par6 par6 par6 par6"
 
 }
