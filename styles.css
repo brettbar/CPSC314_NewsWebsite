@@ -77,8 +77,13 @@ div.pol{
 }
 div.eco{
   background: #0B486B;  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #F56217, #0B486B);  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #F56217, #0B486B); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: -webkit-linear-gradient(to right, red, #0B486B);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, red, #0B486B); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+div.orn {
+  background: orange;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #F56217, yellow);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #F56217,yellow ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
 a.article-title {
@@ -89,6 +94,7 @@ a.article-title {
   text-align: center;
   margin: 0px;
 }
+
 p.article-text {
   font-size: 0.75em;
   color:black;
@@ -115,14 +121,19 @@ span.pol {
 span.sci {
   background: #34e89e;  /* fallback for old browsers */
   background: -webkit-linear-gradient(to right, #0f3443, #34e89e);  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #0f3443, #34e89e); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */\
+  background: linear-gradient(to right, #0f3443, #34e89e); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   padding: 10px;
 }
 span.eco {
   background: #0B486B;  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #F56217, #0B486B);  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #F56217, #0B486B); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
+  background: -webkit-linear-gradient(to right, red, #0B486B);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, red, #0B486B); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  padding: 10px;
+}
+span.orn {
+  background: orange;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #F56217, yellow);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #F56217,yellow ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   padding: 10px;
 }
 
@@ -159,6 +170,15 @@ section.articles-economics{
   min-width: 100px;
 }
 
+section.orange-man-bad {
+  grid-area: orange-man;
+  min-width: 100px;
+}
+section.articles-orange-man {
+  grid-area: orange-articles;
+  min-width: 100px;
+}
+
 .news {
   display: grid;
   width: 75%;
@@ -167,7 +187,8 @@ section.articles-economics{
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-template-areas:
     "home home politic pol-articles"
-    "sci-articles science eco-articles eco";
+    "sci-articles science eco-articles eco"
+    "orange-man orange-man orange-articles orange-articles";
 }
 
 div.hero-banner {
@@ -185,10 +206,10 @@ div.science-banner {
 div.economics-banner {
   background-image: url('https://images.unsplash.com/photo-1559589689-577aabd1db4f?ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80');
 }
-/*
-div.trump-banner {
-  background-image: url('https://d.newsweek.com/en/full/629926/trump-cnn.jpg');
-}*/
+
+div.orange-man-banner {
+  background-image: url('https://cdn.cnn.com/cnnnext/dam/assets/191024052253-trump-colorado-border-wall-pittsburgh-exlarge-169.jpg');
+}
 
 /*________________________________________________________________________________________*/
 /*text starting for article*/
@@ -276,4 +297,8 @@ footer {
   margin-top: 50px;
   margin-bottom: 0px;
   bottom: 0;
+}
+
+div.paragraph {
+  text-indent: 50px;
 }
